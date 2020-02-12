@@ -11,3 +11,6 @@ lerna-debug.log*
 # Node specific folders
 node_modules
 .node_modules
+
+# Privacy concerns 
+config/config.json
