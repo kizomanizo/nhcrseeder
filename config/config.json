@@ -18,7 +18,7 @@
   "production": {
     "username": "root",
     "password": "Mysql2019!",
-    "database": "nhcr_production",
+    "database": "nhcr_prod",
     "host": "127.0.0.1",
     "dialect": "mysql",
     "operatorsAliases": false
