@@ -3,7 +3,7 @@ const faker = require('faker');
 module.exports = {
     up: (queryInterface, Sequelize) => {
         let records = [];
-        const record_limit = 500;
+        const record_limit = 1000;
         let record_counter = 0;
         while (record_counter < record_limit) {
             records = [
@@ -130,29 +130,32 @@ function getBirthPlace() {
     const regions = [
         'Arusha',
         'Dar es Salaam',
-        'Tabora',
-        'Njombe',
-        'Pwani',
+        'Dodoma',
+        'Geita',
+        'Iringa',
+        'Kagera',
+        'Katavi',
         'Kilimanjaro',
+        'Kigoma',
+        'Lindi',
+        'Manyara',
+        'Mara',
+        'Mbeya',
+        'Morogoro',
+        'Mtwara',
+        'Mwanza',
+        'Njombe',
+        'Pemba',
+        'Pwani',
+        'Rukwa',
+        'Ruvuma',
+        'Shinyanga',
         'Simiyu',
         'Singida',
-        'Dodoma',
-        'Lindi',
-        'Mtwara',
-        'Ruvuma',
-        'Mbeya',
-        'Rukwa',
-        'Kigoma',
-        'Shinyanga',
-        'Kagera',
-        'Morogoro',
-        'Iringa',
-        'Manyara',
-        'Katavi',
-        'Mara',
+        'Tabora',
+        'Tanga',
         'Unguja',
-        'Pemba',
-        'Geita',
+
 
     ];
     return regions[getRandomIndex(regions.length)];
@@ -172,7 +175,12 @@ function getWards() {
         'Machiwa',
         'Singidani',
         'Malawi',
-        'Ngonga'
+        'Ngonga',
+        'Mwenge',
+        'Sinza',
+        'Manrangu Mashariki',
+        'Burega',
+        'Bangwe',
     ];
 
     return wards[getRandomIndex(wards.length)];
@@ -215,7 +223,7 @@ function getHamlet() {
         'Mzizima',
         'Yombo',
         'Sitimbi',
-        'Machini', 'Mikocheni', 'Mgambani', 'Madale', 'Vijibweni', 'Kifulu'
+        'Machini', 'Mikocheni', 'Mgambani', 'Madale', 'Vijibweni', 'Kifulu', 'Bonyokwa'
     ];
     return hamlets[getRandomIndex(hamlets.length)];
 }
@@ -227,7 +235,8 @@ function getRandomPhoneNumber() {
         '0785',
         '0655',
         '0775',
-        '0653'
+        '0653',
+        '0755',
     ];
     return prefixes[getRandomIndex(prefixes.length)] !== 'undefined' ?
         prefixes[getRandomIndex(prefixes.length)] + " " + generateNthDitigNumber(3) + " " + generateNthDitigNumber(3)
