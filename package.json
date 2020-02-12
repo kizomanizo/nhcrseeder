@@ -1,0 +1,30 @@
+{
+  "name": "client-registry-database-seeder",
+  "version": "1.0.0",
+  "description": "A seeder app for client registry clients list",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leompande/cr-seeder.git"
+  },
+  "keywords": [
+    "Client",
+    "Registry"
+  ],
+  "author": "MSH (Leonard Mpande, Kizito Mrema, Paul Bwathond)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/leompande/cr-seeder/issues"
+  },
+  "homepage": "https://github.com/leompande/cr-seeder#readme",
+  "dependencies": {
+    "mysql2": "^2.0.1",
+    "sequelize": "^5.21.2"
+  },
+  "devDependencies": {
+    "faker": "^4.1.0"
+  }
+}
